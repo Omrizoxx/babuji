@@ -3,7 +3,8 @@ body{
     font-size: 15px;
     line-height:1.5;
     font: 15px/1.5 arial, helvetica,sans-serif;
-    background-color: #f4f4f4;
+    background-color: #35424a;
+    color: #fff;
 }
 .container{
     width: 80%;
@@ -14,10 +15,11 @@ body{
 
 .dark{
     padding: 15px;
-    background: #35424a;
+    background: #e8491d;
     color: #fff;
     margin-top: 10px;
     margin-bottom: 10px;
+    background: linear-gradient(to right, #35424a, #e8491d);
 }
 
 header{
@@ -26,6 +28,7 @@ header{
     padding-top: 30px;
     min-height: 70px;
     border-bottom: orange 3px solid;
+    background: linear-gradient(to right, #35424a, #e8491d);
 }
 
 header a{
@@ -79,12 +82,29 @@ header a:active{
     text-decoration: underline;
     color: blanchedalmond;
 }
-
+header a{
+    color: #35424a;
+}
+footer ul{
+    list-style: none;
+    display: inline;
+}
+footer li{
+    display: inline;
+    padding: 40px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+footer a{
+    text-decoration: none;
+    color: #000;
+}
 #showcase{
     min-height: 400px;
     text-align: center;
     color: #fff;
-    background-image: url(../IMAGES/SHOW.jpg);
+    background-image: url(../IMAGES/slime.jpg);
     background-position:center ;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -114,6 +134,8 @@ header a:active{
     border-top: 10px;
     border: 5px solid #000;
     margin-top: 20px;
+    border-radius: 15px;
+    background: linear-gradient(to right, #35424a, #e8491d);
 }
 #newsletter h1{
     float: left;
@@ -132,6 +154,8 @@ header a:active{
 
 #boxes {
     margin-top: 20px;
+    background-color: orangered;
+    background: linear-gradient(to right, #35424a, #e8491d);
 }
 
 #boxes .box{
@@ -140,11 +164,18 @@ header a:active{
     padding: 10px;
     text-align: center;
 }
-
+#sidebar #btn{
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 15px;
+    color: #35424a;
+}
 #sidebar{
     float: right;
     width: 30%;
     margin-top: 10px;
+
+    /* background: linear-gradient(to right, #35424a, #e8491d); */
 }
 
 article#main-col{
@@ -172,6 +203,7 @@ ul#services li{
     color: #fff;
     padding: 20px;
     background-color: orangered;
+    background: linear-gradient(to right, #35424a, #e8491d);
 
 }
 
@@ -182,11 +214,28 @@ ul#services li{
         float: none;
         text-align: center;
         width: 100%;
-     }
+    }
 
 }
 
 .icons{
     padding: 10px;
     size: 2.5rem;
+}
+@media(max-width:480){
+    body{
+        display: flex;
+        flex-direction: column;
+
+    }
+    #navcont{
+        display: flex;
+        flex-direction: row;
+
+    }
+    nav{
+        float: right;
+        display: flex;
+        box-sizing: border-box;
+    }
 }
